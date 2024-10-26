@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <Team />
-      <div className="text-center text-2xl">HELLO</div>
+      
     </>
   );
 };
