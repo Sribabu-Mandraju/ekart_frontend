@@ -3,11 +3,11 @@ import { FaLinkedin } from 'react-icons/fa';
 
 function Team() {
   const profiles = [
-    { name: "Sireesha", profession: "Software Engineer", linkdin: "https://www.linkedin.com/in/johndoe/" },
-    { name: "Sribabu", profession: "Data Scientist", linkdin: "https://www.linkedin.com/in/johndoe/" },
-    { name: "Nakshakthra", profession: "UX Designer", linkdin: "https://www.linkedin.com/in/johndoe/" },
-    { name: "Bindu", profession: "Product Manager", linkdin: "https://www.linkedin.com/in/johndoe/" },
-    { name: "Dharaneswar", profession: "DevOps Engineer", linkdin: "https://www.linkedin.com/in/johndoe/" },
+    { name: "Sireesha", profession: "Web Developer", linkdin: "https://www.linkedin.com/in/johndoe/" },
+    { name: "Sribabu", profession: "Web Developer", linkdin: "https://www.linkedin.com/in/johndoe/" },
+    { name: "Nakshakthra", profession: "UI/UX Designer", linkdin: "https://www.linkedin.com/in/johndoe/" },
+    { name: "Bindu", profession: "Web Developer", linkdin: "https://www.linkedin.com/in/johndoe/" },
+    { name: "Dharaneswar", profession: "Web Developer   ", linkdin: "https://www.linkedin.com/in/johndoe/" },
   ];
 
   return (
