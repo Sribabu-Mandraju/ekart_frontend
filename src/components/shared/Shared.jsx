@@ -4,11 +4,32 @@ import { GiProgression } from "react-icons/gi";
 import { FiDownload } from "react-icons/fi";
 import { MdReviews } from "react-icons/md";
 import { IoIosStar } from "react-icons/io";
+import { FaRegHeart } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+import { BsCart } from "react-icons/bs";
 const Shared=()=>{
   return(
-<div className="flex items-center justify-center gap-[40px]">
+<div className="flex items-center justify-center">
 <div className="h-[550px] w-[350px] bg-black">
-  <div className="mt-[200px] ml-[40px] mr-[40px] flex flex-col gap-[10px]">
+
+<div className="relative">
+  <img
+    src="download.jpeg"
+    className="h-[180px] w-[300px] rounded-[10px] ml-[25px] mt-[20px]"
+    alt="Description"
+  />
+  <button className="absolute left-[30px] top-[10px] w-[80px] h-[30px] bg-red-500 text-white font-bold z-10">
+    Sale
+  </button>
+  <div className="absolute bottom-4  flex flex-row left-[120px] gap-[20px] z-10">
+    <div><FaRegHeart /></div>
+    <div><FaEye /></div>
+    <div><BsCart /></div>
+  </div>
+</div>
+
+
+  <div className="ml-[40px] mt-[20px] mr-[40px] flex flex-col gap-[10px]">
 
 
 <div className="flex justify-between gap-[3px]">
