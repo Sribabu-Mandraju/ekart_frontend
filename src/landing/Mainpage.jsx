@@ -6,7 +6,6 @@ import About from './About'
 const Mainpage = () => {
   return (
     <>
-      <Header />
       <Hero />
     </>
   )

@@ -13,7 +13,6 @@ function Team() {
 
   return (
     <>
-        <Header />
         <div className="flex flex-wrap justify-center">
         {profiles.map(profile => (
             <div key={profile.name} className="h-[300px] w-[300px] border-3 shadow-lg m-4 flex items-center justify-center">
