@@ -5,7 +5,8 @@ import Header from "./components/header/Header";
 const App = () => {
   return (
     <>
-      <Header />
+      <Team />
+      {/* <div className="text-center mt-[10px]">hello</div> */}
     </>
   );
 };

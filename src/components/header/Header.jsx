@@ -2,12 +2,14 @@
 import React, { useState } from 'react';
 import { Menu } from '@headlessui/react';
 import { FaBars, FaInstagram, FaYoutube, FaFacebook, FaTwitter, FaUser, FaShoppingCart, FaHeart, FaSearch } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full">
+    <header className="w-full sticky top-0 left-0 ">
       {/* Top Bar */}
       <div className="hidden sm:flex justify-between items-center w-full h-16 p-4 bg-gray-800 text-white">
         <div className="flex gap-6">
@@ -79,7 +81,7 @@ function Header() {
 
         {/* Right Side */}
         <div className="flex items-center gap-4 text-blue-400 font-bold">
-          <a href="#" className="flex items-center gap-1"><FaUser /> Login / Register</a>
+          <a href="#" className="hidden sm:flex items-center gap-1"><FaUser /> Login / Register</a>
           <FaSearch />
           <a href="#" className="flex items-center gap-1"><FaShoppingCart /> 1</a>
           <a href="#" className="flex items-center gap-1"><FaHeart /> 1</a>
