@@ -1,15 +1,14 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faStar } from '@fortawesome/free-regular-svg-icons';
-import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai';
 
 const Card = () => {
     return (
         <div className="card h-[400px] w-[280px] border-[2px] rounded-lg">
             <div className="image bg-[#ccc] w-full h-[230px] relative">
                 <div className="wishlist h-[30px] w-[30px] rounded-full flex justify-center items-center bg-[white] absolute right-2 my-[10px]">
-                    <FontAwesomeIcon icon={faHeart} className="text-[#787878]" />
+                    <AiOutlineHeart className="text-[#787878]" />
                 </div>
                 <img src="headphone-1.jpeg" alt="Wireless Earbuds" className="w-full h-full" />
             </div>
@@ -21,7 +20,7 @@ const Card = () => {
                 <p className="text-[#ccc] pl-[5px]">Organic cotton earbuds certified</p>
                 <div className="rating text pl-[5px]">
                     {[...Array(5)].map((_, index) => (
-                        <FontAwesomeIcon key={index} icon={solidStar} className="text-[green]" />
+                        <AiFillStar key={index} className="text-[green]" />
                     ))}
                     <span className="text-[#ccc]">(121)</span>
                 </div>

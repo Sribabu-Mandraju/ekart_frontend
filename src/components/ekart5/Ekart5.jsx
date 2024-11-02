@@ -1,7 +1,6 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faTruck } from '@fortawesome/free-solid-svg-icons';
+import { FaStar, FaTruck } from 'react-icons/fa';
 
 const Ekart5 = () => {
     return (
@@ -29,7 +28,7 @@ const Ekart5 = () => {
                             </p>
                             <div className="rating text-sm md:text-base">
                                 {[...Array(5)].map((_, index) => (
-                                    <FontAwesomeIcon key={index} icon={faStar} className="text-green-500" />
+                                    <FaStar key={index} className="text-green-500" />
                                 ))}
                                 <span className="text-gray-400">(121)</span>
                             </div>
@@ -59,13 +58,13 @@ const Ekart5 = () => {
                         <div className="delivery w-full md:w-[350px] h-[170px] border-2 rounded-lg">
                             <div className="free-delivery py-3 md:py-5 border-b-2 px-4 md:px-5">
                                 <p className="font-semibold">
-                                    <FontAwesomeIcon icon={faTruck} className="text-orange-500 px-1" /> Free Delivery
+                                    <FaTruck className="text-orange-500 px-1" /> Free Delivery
                                 </p>
                                 <p className="underline text-xs md:text-sm font-semibold pl-8">Enter your postal code for delivery availability</p>
                             </div>
                             <div className="return-delivery py-2 md:py-2 px-4 md:px-5">
                                 <p>
-                                    <FontAwesomeIcon icon={faTruck} className="text-orange-500 px-1" /> Return Delivery
+                                    <FaTruck className="text-orange-500 px-1" /> Return Delivery
                                 </p>
                                 <p className="underline text-xs md:text-sm font-semibold pl-8">Free 30 days Delivery returns.<span className="underline">Details</span></p>
                             </div>

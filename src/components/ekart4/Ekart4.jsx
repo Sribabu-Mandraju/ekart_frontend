@@ -1,14 +1,13 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faStar, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { FaHeart, FaStar, FaAngleDown } from 'react-icons/fa';
 
 const HeadphoneCard = ({ image, title, price }) => {
     return (
         <div className="card h-[400px] w-[280px] border-[2px] rounded-lg">
             <div className="image bg-[#ccc] w-full h-[230px] relative">
                 <div className="wishlist h-[30px] w-[30px] rounded-full flex justify-center items-center bg-[white] absolute right-2 my-[10px]">
-                    <FontAwesomeIcon icon={faHeart} className="text-[#787878]" />
+                    <FaHeart className="text-[#787878]" />
                 </div>
                 <img src={image} alt={title} className="w-full h-full" />
             </div>
@@ -20,7 +19,7 @@ const HeadphoneCard = ({ image, title, price }) => {
                 <p className="text-[#ccc] pl-[5px]">Organic cotton earbuds certified</p>
                 <div className="rating text pl-[5px]">
                     {[...Array(5)].map((_, index) => (
-                        <FontAwesomeIcon key={index} icon={faStar} className="text-[green]" />
+                        <FaStar key={index} className="text-[green]" />
                     ))}
                     <span className="text-[#ccc]">(121)</span>
                 </div>
@@ -32,7 +31,7 @@ const HeadphoneCard = ({ image, title, price }) => {
     );
 };
 
-const Ekart4= () => {
+const Ekart4 = () => {
     return (
         <div>
             <div className="top lg:h-[220px] lg:w-[90vw] bg-[pink] rounded-lg flex flex-wrap m-[20px] md:m-[50px] lg:justify-between">
@@ -54,7 +53,7 @@ const Ekart4= () => {
                     <div key={item} className="headphone-type flex bg-[#ccc] px-[10px] justify-center items-center rounded-full py-[3px]">
                         <p>{item}</p>
                         <span className="px-[10px] py-[2px]">
-                            <FontAwesomeIcon icon={faAngleDown} className="text-[12px]" />
+                            <FaAngleDown className="text-[12px]" />
                         </span>
                     </div>
                 ))}
