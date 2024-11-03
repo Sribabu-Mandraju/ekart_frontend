@@ -32,7 +32,7 @@ const Ekart3 = () => {
         ].map((card, index) => (
           <div
             key={index}
-            className="card h-[350px] w-[270px] flex flex-col items-center justify-center gap-3 rounded-lg group hover:bg-[#08295e] hover:text-white transition-all duration-300 ease-in"
+            className="card h-[350px] w-[270px] flex flex-col items-center justify-center gap-3 rounded-lg group hover:bg-[#08295e] hover:text-white transition-all duration-300 ease-in  shadow-lg"
           >
             <div className="icon h-[50px] w-[50px]">
               <i className={`fa-solid fa-${card.icon} text-[48px] text-[dodgerblue]`}></i>

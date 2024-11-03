@@ -80,7 +80,7 @@ function Header() {
         </div>
 
         {/* Right Side */}
-        <div className="flex items-center gap-4 text-blue-400 font-bold">
+        <div className="flex items-center gap-4 text-black-400 font-bold">
           <a href="#" className="hidden sm:flex items-center gap-1"><FaUser /> Login / Register</a>
           <FaSearch />
           <a href="#" className="flex items-center gap-1"><FaShoppingCart /> 1</a>
