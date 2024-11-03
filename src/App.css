@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hello{
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    font-weight: 700;
+}
