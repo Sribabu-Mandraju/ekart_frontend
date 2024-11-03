@@ -17,7 +17,7 @@ const HeadphoneCard = ({ image, title, price }) => {
                     <span className="cost"><sup>$</sup>{price}</span>
                 </div>
                 <p className="text-[#ccc] pl-[5px]">Organic cotton earbuds certified</p>
-                <div className="rating text pl-[5px]">
+                <div className="rating text flex items-center pl-[5px]">
                     {[...Array(5)].map((_, index) => (
                         <FaStar key={index} className="text-[green]" />
                     ))}
