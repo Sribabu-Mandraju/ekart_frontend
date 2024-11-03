@@ -16,6 +16,7 @@ import Ekart1 from "./components/ekart123/Ekart1";
 import Ekart2 from "./components/ekart123/Ekart2";
 import Ekart3 from "./components/ekart123/Ekart3";
 import Footer from "./landing/Footer";
+import Scroll from "./components/scroll/Scroll";
 import { FlipWords } from "./components/imported/Flip";
 
 import { FollowerPointerCard } from "./components/imported/Pointer";
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/" element={<Mainpage />} />
         <Route path="/footer" element={<Footer />} />
         {/* <Route path="/team" element={<Team />} /> */}
+        <Route path="/scroll" element={<Scroll />} />
         <Route path="/header" element={<Header />} />
         <Route path="/shared" element={<Shared />} />
         <Route path="/ekart5" element={<Ekart5 />} />
