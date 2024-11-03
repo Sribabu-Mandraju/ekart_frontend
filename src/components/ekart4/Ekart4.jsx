@@ -41,7 +41,7 @@ const Dropdown = ({ label, options }) => {
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <p>{label}</p>
-                <FontAwesomeIcon icon={faAngleDown} className="text-[12px]" />
+                <FaAngleDown className="text-[12px]" />
             </div>
             {isOpen && (
                 <div className="absolute bg-white border border-gray-300 mt-1 rounded shadow-lg z-10">
@@ -55,7 +55,6 @@ const Dropdown = ({ label, options }) => {
         </div>
     );
 };
-
 
 const Ekart4 = () => {
     return (
@@ -77,13 +76,6 @@ const Ekart4 = () => {
             <div className="menu w-full flex gap-3 px-[20px] sm:px-[40px] flex flex-wrap">
                 {['Headphone type', 'Price', 'Review', 'Color', 'Material', 'All Filters'].map((item) => (
                     <Dropdown key={item} label={item} options={['Option 1', 'Option 2', 'Option 3']} />
-                    <div key={item} className="headphone-type flex bg-[#ccc] px-[10px] justify-center items-center rounded-full py-[3px]">
-                        <p>{item}</p>
-                        <span className="px-[10px] py-[2px]">
-                            <FaAngleDown className="text-[12px]" />
-                        </span>
-                    </div>
-
                 ))}
             </div>
 
