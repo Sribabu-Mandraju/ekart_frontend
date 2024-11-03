@@ -19,7 +19,7 @@ import { FlipWords } from "./components/imported/Flip";
 import { FollowerPointerCard } from "./components/imported/Pointer";
 const App = () => {
   return (
-    <FollowerPointerCard className="bg-white">
+    // <FollowerPointerCard className="bg-white">
     <Router>
       <Header />
       
@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/ekart3" element={<Ekart3/>} />
       </Routes>
     </Router>
-    </FollowerPointerCard>
+    // </FollowerPointerCard>
   );
 };
 
