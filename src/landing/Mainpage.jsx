@@ -43,11 +43,6 @@ const Mainpage = () => {
       <Hero />
       <About />
       <Team />
-      <HeroHighlight />
-      {/* <FollowerPointerCard className="p-10 bg-white shadow-lg rounded-lg">
-        <div className="text-center">Hello</div>
-      </FollowerPointerCard> */}
-      {/* <World globeConfig={globeConfig} data={data} />  */}
     </>
   )
 }
