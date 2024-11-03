@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from 'react-icons/fa';
+import { SiGooglemessages } from "react-icons/si";
 const Ekart3 = () => {
   return (
     <div className="visit w-full h-[500px] flex flex-col items-center">
@@ -12,19 +14,19 @@ const Ekart3 = () => {
       <div className="visit-cards w-full flex justify-center gap-5 flex-wrap">
         {[
           {
-            icon: 'phone',
+            icon: <FaPhoneAlt />,
             email1: 'georgia.young@example.com',
             email2: 'georgia.young@aple.com',
             title: 'Get Support',
           },
           {
-            icon: 'location-dot',
+            icon: <FaEnvelope/>,
             email1: 'georgia.young@example.com',
             email2: 'georgia.young@aple.com',
             title: 'Get Support',
           },
           {
-            icon: 'envelope',
+            icon: <SiGooglemessages />,
             email1: 'georgia.young@example.com',
             email2: 'georgia.young@aple.com',
             title: 'Get Support',
@@ -34,8 +36,8 @@ const Ekart3 = () => {
             key={index}
             className="card h-[350px] w-[270px] flex flex-col items-center justify-center border gap-3 rounded-lg group hover:bg-[#08295e] hover:text-white transition-all duration-300 ease-in  shadow-lg"
           >
-            <div className="icon h-[50px] w-[50px]">
-              <i className={`fa-solid fa-${card.icon} text-[48px] text-[dodgerblue]`}></i>
+            <div className="h-[50px] w-[50px] text-[#08295e] group-hover:text-white transition-colors duration-300">
+              <i className="text-[40px] ">{card.icon}</i>
             </div>
             <div className="card-details w-full flex flex-col items-center">
               <p className="mail-1 text-center">{card.email1}</p>
