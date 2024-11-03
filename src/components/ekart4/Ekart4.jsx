@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'tailwindcss/tailwind.css';
 import { FaHeart, FaStar, FaAngleDown } from 'react-icons/fa';
 
@@ -31,6 +31,31 @@ const HeadphoneCard = ({ image, title, price }) => {
     );
 };
 
+const Dropdown = ({ label, options }) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <div className="relative">
+            <div 
+                className="flex border-2 border-black px-[10px] justify-between items-center rounded-full py-[3px] cursor-pointer" 
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                <p>{label}</p>
+                <FaAngleDown className="text-[12px]" />
+            </div>
+            {isOpen && (
+                <div className="absolute bg-white border border-gray-300 mt-1 rounded shadow-lg z-10">
+                    {options.map((option) => (
+                        <div key={option} className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                            {option}
+                        </div>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
+
 const Ekart4 = () => {
     return (
         <div>
@@ -50,12 +75,7 @@ const Ekart4 = () => {
 
             <div className="menu w-full flex gap-3 px-[20px] sm:px-[40px] flex flex-wrap">
                 {['Headphone type', 'Price', 'Review', 'Color', 'Material', 'All Filters'].map((item) => (
-                    <div key={item} className="headphone-type flex bg-[#ccc] px-[10px] justify-center items-center rounded-full py-[3px]">
-                        <p>{item}</p>
-                        <span className="px-[10px] py-[2px]">
-                            <FaAngleDown className="text-[12px]" />
-                        </span>
-                    </div>
+                    <Dropdown key={item} label={item} options={['Option 1', 'Option 2', 'Option 3']} />
                 ))}
             </div>
 
